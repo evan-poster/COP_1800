@@ -1,7 +1,7 @@
 // ChiliToGoProfit.java
 
 /**
- * Exercise 12:
+ * Exercise 13:
  * 
  * In the ChiliToGo program in Exercise 12, the costs to produce an adult meal and a child’s meal are $4.35 and $3.10, respectively. Modify the ChiliToGo program to display the total profit for each type of meal as well as the grand total profit. Save the program as ChiliToGoProfit.java.
  */
@@ -33,6 +33,11 @@ public class ChiliToGoProfit {
 		double adultProfit = adultRevenue - adultCost;
 		double childProfit = childRevenue - childCost;
 		double totalProfit = totalRevenue - totalCost;
+
+		// Round results due to Java's double data type
+		adultProfit = Math.round(adultProfit * 100.0) / 100.0;
+		childProfit = Math.round(childProfit * 100.0) / 100.0;
+		totalProfit = Math.round(totalProfit * 100.0) / 100.0;
 
 		// Print results
 		System.out.println("Adults: " + adults);

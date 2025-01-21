@@ -1,7 +1,7 @@
 // PaintCalculator.java
 
 /**
- * Exercise 8:
+ * Exercise 7:
  * 
  * Assume that a gallon of paint covers about 350 square feet of wall space. Create
 an application with a main() method that prompts the user for the length, width,

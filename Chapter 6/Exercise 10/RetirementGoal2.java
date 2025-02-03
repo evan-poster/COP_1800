@@ -24,6 +24,6 @@ public class RetirementGoal2 {
 			balance += savings;
 			balance *= 1.04;
 		}
-		System.out.println("You will have $" + balance + " at retirement.");
+		System.out.printf("You will have $%.2f at retirement.%n", balance);
 	}
 }

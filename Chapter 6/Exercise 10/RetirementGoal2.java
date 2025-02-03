@@ -1,17 +1,12 @@
 /**
  * 
- * Write an application that prompts a user for the number of years the user has until retirement and the amount of money the user can save annually.
- * If the user enters 0 or a negative number for either value, reprompt the user until valid entries are made.
- * Assume that no interest is earned on the money.
- * Display the amount of money the user will have at retirement.
- * 
- * Save the file as RetirementGoal.java.
- *
+ * Modify the RetirementGoal application to display the amount of money the user will have if the user
+earns 4 percent interest on the balance every year. Save the file as RetirementGoal2.java.
  */
 
 import java.util.Scanner;
 
-public class RetirementGoal {
+public class RetirementGoal2 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
@@ -27,6 +22,7 @@ public class RetirementGoal {
 		double balance = 0;
 		for (int i = 0; i < years; i++) {
 			balance += savings;
+			balance *= 1.04;
 		}
 		System.out.println("You will have $" + balance + " at retirement.");
 	}
